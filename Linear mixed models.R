@@ -3,7 +3,7 @@
 ##===============================================================================
 rm(list=ls())
 
-readDir=c("E:/MYData/Compare_P_C/result")
+readDir=c("E:/MYData")
 setwd(readDir)
 library(lmerTest)
 library(piecewiseSEM)
@@ -18,7 +18,7 @@ library(MuMIn)
 ####Cunninghamia lanceolata PD：LMM_All####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
 log.norm.scale <- function(df) {
@@ -92,10 +92,10 @@ rm(list=ls())
 ####Cunninghamia lanceolata PD：LMM_High####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
-C_Plot= read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C_HLS_LCS_forests.csv")
+C_Plot= read.csv("data_C_HLS_LCS_forests.csv")
 data_sem2  =merge(C_Plot,data_sem2,by.x="Plot", by.y="Plot" )
 
 data_sem2 = data_sem2[data_sem2$Group == "2" , ]
@@ -179,10 +179,10 @@ rm(list=ls())
 ####Cunninghamia lanceolata PD：LMM_Low####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
-C_Plot= read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C_HLS_LCS_forests.csv")
+C_Plot= read.csv("data_C_HLS_LCS_forests.csv")
 data_sem2  =merge(C_Plot,data_sem2,by.x="Plot", by.y="Plot" )
 
 data_sem2 = data_sem2[data_sem2$Group == "1" , ]
@@ -271,7 +271,7 @@ write.csv(coef_table_full, "PD_full_average_Low_310.csv")
 ####Pinus massoniana PD：LMM_All####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 colnames(data_sem2 )
 
 log.norm.scale <- function(df) {
@@ -354,9 +354,9 @@ write.csv(coef_table_full, "PD_full_average_All_220.csv")
 ####Pinus massoniana PD：LMM_High####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 
-C_Plot=read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P_HLS_LCS_forests.csv")
+C_Plot=read.csv("data_P_HLS_LCS_forests.csv")
 
 C_Plot=C_Plot[,c("Plot","Group"  )]
 
@@ -446,9 +446,9 @@ write.csv(coef_table_full, "PD_full_average_High_220.csv")
 ####Pinus massoniana PD：LMM_Low####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 
-C_Plot=read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P_HLS_LCS_forests.csv")
+C_Plot=read.csv("data_P_HLS_LCS_forests.csv")
 
 C_Plot=C_Plot[,c("Plot","Group"  )]
 
@@ -543,7 +543,7 @@ rm(list=ls())
 ####Cunninghamia lanceolata FD：LMM_All####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
 log.norm.scale <- function(df) {
@@ -629,10 +629,10 @@ rm(list=ls())
 ####Cunninghamia lanceolata FD：LMM_High####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
-C_Plot= read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C_HLS_LCS_forests.csv")
+C_Plot= read.csv("data_C_HLS_LCS_forests.csv")
 data_sem2  =merge(C_Plot,data_sem2,by.x="Plot", by.y="Plot" )
 
 data_sem2 = data_sem2[data_sem2$Group == "2" , ]
@@ -716,10 +716,10 @@ rm(list=ls())
 ####Cunninghamia lanceolata FD：LMM_Low####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C.csv")
+data_sem2=read.csv( "data_C.csv")
 colnames(data_sem2 )
 
-C_Plot= read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_C_HLS_LCS_forests.csv")
+C_Plot= read.csv("data_C_HLS_LCS_forests.csv")
 data_sem2  =merge(C_Plot,data_sem2,by.x="Plot", by.y="Plot" )
 
 data_sem2 = data_sem2[data_sem2$Group == "1" , ]
@@ -804,7 +804,7 @@ write.csv(coef_table_full, "FD_full_average_Low_310.csv")
 ####Pinus massoniana FD：LMM_All####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 colnames(data_sem2 )
 
 log.norm.scale <- function(df) {
@@ -897,9 +897,9 @@ write.csv(coef_table_full, "FD_full_average_All_220.csv")
 ####Pinus massoniana FD：LMM_High####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 
-C_Plot=read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P_HLS_LCS_forests.csv")
+C_Plot=read.csv("data_P_HLS_LCS_forests.csv")
 
 C_Plot=C_Plot[,c("Plot","Group"  )]
 
@@ -999,9 +999,9 @@ write.csv(coef_table_full, "FD_full_average_High_220.csv")
 ####Pinus massoniana FD：LMM_Low####
 rm(list=ls())
 
-data_sem2=read.csv( "E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P.csv")
+data_sem2=read.csv( "data_P.csv")
 
-C_Plot=read.csv("E:/MYData/Compare_P_C/投稿/Ecological Applications/code/data_P_HLS_LCS_forests.csv")
+C_Plot=read.csv("data_P_HLS_LCS_forests.csv")
 
 C_Plot=C_Plot[,c("Plot","Group"  )]
 
